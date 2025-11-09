@@ -1,0 +1,91 @@
+
+[
+  {
+    "collection": "users",
+    "doc": "primaryadmin_navolaudistrictschool",
+    "data": {
+      "uid": "primaryadmin_navolaudistrictschool",
+      "email": "navolaudistrictschool@yahoo.com",
+      "role": "primary-admin",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "teacher_lureqeleticia",
+    "data": {
+      "uid": "teacher_lureqeleticia",
+      "email": "lureqeleticia@gmail.com",
+      "role": "teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "teacher_eshitaprasad028",
+    "data": {
+      "uid": "teacher_eshitaprasad028",
+      "email": "eshitaprasad028@gmail.com",
+      "role": "teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "teacher_kolovanimeiwaga",
+    "data": {
+      "uid": "teacher_kolovanimeiwaga",
+      "email": "kolovanimeiwaga@yahoo.com",
+      "role": "teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "headteacher_rosabatina3",
+    "data": {
+      "uid": "headteacher_rosabatina3",
+      "email": "rosabatina3@gmail.com",
+      "role": "head-teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "teacher_milielinatale6",
+    "data": {
+      "uid": "teacher_milielinatale6",
+      "email": "milielinatale6@gmail.com",
+      "role": "teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "teacher_mwatabu",
+    "data": {
+      "uid": "teacher_mwatabu",
+      "email": "mwatabu@gmail.com",
+      "role": "teacher",
+      "schoolId": "2009",
+      "schoolName": "Navalau District School"
+    }
+  },
+  {
+    "collection": "users",
+    "doc": "systemadmin",
+    "data": {
+      "uid": "systemadmin",
+      "email": "systemadmin@system.com",
+      "role": "system-admin",
+      "schoolId": "global",
+      "schoolName": "Global Platform"
+    }
+  }
+]

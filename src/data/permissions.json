@@ -1,0 +1,124 @@
+
+[
+    {
+        "id": "system-admin",
+        "name": "System Admin",
+        "users": [],
+        "permissions": [
+            "dashboard:primary-admin:view", "dashboard:head-teacher:view", "dashboard:teacher:view",
+            "users:view", "users:create", "users:edit", "users:delete",
+            "roles:assign", "permissions:manage",
+            "school-info:edit",
+            "staff:view", "staff:add", "staff:edit", "staff:delete",
+            "lesson-plans:submit", "lesson-plans:review",
+            "exam-results:view", "exam-results:add", "exam-results:delete",
+            "disciplinary:view", "disciplinary:add", "disciplinary:delete",
+            "counselling:view", "counselling:add", "counselling:delete",
+            "inventory:primary:view", "inventory:primary:edit",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "library:view", "library:edit", "library:transact",
+            "operations:master-data:upload", "operations:email-settings:manage",
+            "reports:school:view",
+            "health-safety:view",
+            "attendance:view"
+        ]
+    },
+    {
+        "id": "primary-admin",
+        "name": "Primary Admin",
+        "users": [],
+        "permissions": [
+            "dashboard:head-teacher:view", "dashboard:teacher:view",
+            "users:view", "users:create", "users:edit",
+            "school-info:edit",
+            "staff:view", "staff:add", "staff:edit",
+            "lesson-plans:review",
+            "exam-results:view", "exam-results:add", "exam-results:delete",
+            "disciplinary:view", "disciplinary:add", "disciplinary:delete",
+            "counselling:view", "counselling:add", "counselling:delete",
+            "inventory:primary:view", "inventory:primary:edit",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "library:view", "library:edit", "library:transact",
+            "operations:master-data:upload", "operations:email-settings:manage",
+            "reports:school:view",
+            "health-safety:view",
+            "attendance:view"
+        ]
+    },
+    {
+        "id": "head-teacher",
+        "name": "Head Teacher",
+        "users": [],
+        "permissions": [
+            "dashboard:teacher:view",
+            "school-info:edit",
+            "staff:view", "staff:edit",
+            "lesson-plans:review",
+            "exam-results:view", "exam-results:add",
+            "disciplinary:view", "disciplinary:add",
+            "counselling:view", "counselling:add",
+            "inventory:primary:view", "inventory:primary:edit",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "reports:school:view",
+            "health-safety:view",
+            "attendance:view",
+            "teachers:rate"
+        ]
+    },
+    {
+        "id": "assistant-head-teacher",
+        "name": "Assistant Head Teacher",
+        "users": [],
+        "permissions": [
+            "dashboard:teacher:view",
+            "school-info:edit",
+            "staff:view",
+            "lesson-plans:review",
+            "exam-results:view",
+            "disciplinary:view",
+            "counselling:view",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "reports:school:view",
+            "health-safety:view",
+            "attendance:view"
+        ]
+    },
+    {
+        "id": "teacher",
+        "name": "Teacher",
+        "users": [],
+        "permissions": [
+            "dashboard:teacher:view",
+            "lesson-plans:submit",
+            "exam-results:add",
+            "disciplinary:add",
+            "counselling:add",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "health-safety:view"
+        ]
+    },
+    {
+        "id": "kindergarten",
+        "name": "Kindergarten Teacher",
+        "users": [],
+        "permissions": [
+            "dashboard:teacher:view",
+            "lesson-plans:submit",
+            "exam-results:add",
+            "disciplinary:add",
+            "counselling:add",
+            "inventory:classroom:view", "inventory:classroom:edit",
+            "health-safety:view"
+        ]
+    },
+    {
+        "id": "librarian",
+        "name": "Librarian",
+        "users": [],
+        "permissions": [
+            "dashboard:teacher:view",
+            "school-info:edit",
+            "library:view", "library:edit", "library:transact"
+        ]
+    }
+]

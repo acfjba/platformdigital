@@ -1,0 +1,67 @@
+
+[
+  {
+    "id": "system_admin_user",
+    "email": "systemadmin@system.com",
+    "password": "admin12345",
+    "displayName": "System Admin",
+    "role": "system-admin",
+    "schoolId": null
+  },
+  {
+    "id": "primaryadmin_navolaudistrictschool",
+    "email": "navolaudistrictschool@yahoo.com",
+    "password": "password123",
+    "displayName": "Navalau District School Admin",
+    "role": "primary-admin",
+    "schoolId": "2009"
+  },
+  {
+    "id": "headteacher_rosabatina3",
+    "email": "rosabatina3@gmail.com",
+    "password": "password123",
+    "displayName": "Rosa Batina",
+    "role": "head-teacher",
+    "schoolId": "2009"
+  },
+  {
+    "id": "teacher_lureqeleticia",
+    "email": "lureqeleticia@gmail.com",
+    "password": "password123",
+    "displayName": "Lureqe Leticia",
+    "role": "teacher",
+    "schoolId": "2009"
+  },
+  {
+    "id": "teacher_eshitaprasad028",
+    "email": "eshitaprasad028@gmail.com",
+    "password": "password123",
+    "displayName": "Eshita Prasad",
+    "role": "teacher",
+    "schoolId": "2009"
+  },
+  {
+    "id": "teacher_kolovanimeiwaga",
+    "email": "kolovanimeiwaga@yahoo.com",
+    "password": "password123",
+    "displayName": "Kolovani Meiwaga",
+    "role": "teacher",
+    "schoolId": "2009"
+  },
+  {
+    "id": "teacher_milielinatale6",
+    "email": "milielinatale6@gmail.com",
+    "password": "password123",
+    "displayName": "Milieli Natale",
+    "role": "teacher",
+    "schoolId": "2009"
+  },
+  {
+    "id": "teacher_mwatabu",
+    "email": "mwatabu@gmail.com",
+    "password": "password123",
+    "displayName": "M. Watabu",
+    "role": "teacher",
+    "schoolId": "2009"
+  }
+]

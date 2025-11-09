@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "staff-001",
+    "staffId": "T-001",
+    "name": "Lureqe Leticia",
+    "role": "teacher",
+    "position": "Class Teacher - Year 1",
+    "department": "Academics",
+    "status": "Active",
+    "email": "lureqeleticia@gmail.com",
+    "phone": "555-0101",
+    "schoolId": "2009"
+  },
+  {
+    "id": "staff-002",
+    "staffId": "T-002",
+    "name": "Eshita Prasad",
+    "role": "teacher",
+    "position": "Class Teacher - Year 2",
+    "department": "Academics",
+    "status": "Active",
+    "email": "eshitaprasad028@gmail.com",
+    "phone": "555-0102",
+    "schoolId": "2009"
+  },
+  {
+    "id": "staff-003",
+    "staffId": "T-003",
+    "name": "Kolovani Meiwaga",
+    "role": "teacher",
+    "position": "Class Teacher - Year 3",
+    "department": "Academics",
+    "status": "Active",
+    "email": "kolovanimeiwaga@yahoo.com",
+    "phone": "555-0103",
+    "schoolId": "2009"
+  },
+    {
+    "id": "staff-004",
+    "staffId": "HT-001",
+    "name": "Rosa Batina",
+    "role": "head-teacher",
+    "position": "Head Teacher",
+    "department": "Administration",
+    "status": "Active",
+    "email": "rosabatina3@gmail.com",
+    "phone": "555-0100",
+    "schoolId": "2009"
+  }
+]

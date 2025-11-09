@@ -1,0 +1,33 @@
+
+[
+    {
+      "id": "counselling-rec-001",
+      "schoolId": "2009",
+      "userId": "teacher_lureqeleticia",
+      "sessionDate": "2024-05-15",
+      "studentName": "Jone Doe",
+      "studentId": "S12345",
+      "studentDob": "2015-08-20",
+      "studentYear": "Year 3",
+      "counsellingType": "Behavioral",
+      "sessionDetails": "Jone has been having trouble focusing in class and has had minor altercations with peers. Discussed strategies for managing frustration and staying on task.",
+      "actionPlan": "Scheduled weekly check-ins for the next 4 weeks. Provided Jone with a 'calm-down' card to use when feeling overwhelmed. Will monitor peer interactions.",
+      "parentsContacted": "Yes",
+      "counsellorName": "Lureqe Leticia"
+    },
+    {
+      "id": "counselling-rec-002",
+      "schoolId": "2009",
+      "userId": "teacher_eshitaprasad028",
+      "sessionDate": "2024-05-18",
+      "studentName": "Adi Litia",
+      "studentId": "S12346",
+      "studentDob": "2016-02-11",
+      "studentYear": "Year 2",
+      "counsellingType": "Academic",
+      "sessionDetails": "Adi is expressing anxiety about reading aloud in class. She is a strong reader but fears making mistakes in front of her peers.",
+      "actionPlan": "Will practice reading in a small, supportive group setting. Encouraged Adi to choose the book for the next read-aloud session to build confidence. Provided positive reinforcement.",
+      "parentsContacted": "No",
+      "counsellorName": "Eshita Prasad"
+    }
+]

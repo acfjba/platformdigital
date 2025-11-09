@@ -1,0 +1,59 @@
+
+[
+  {
+    "uid": "primaryadmin_navolaudistrictschool",
+    "email": "navolaudistrictschool@yahoo.com",
+    "password": "2009@nav",
+    "displayName": "Navolau District School",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_lureqeleticia",
+    "email": "lureqeleticia@gmail.com",
+    "password": "82739@nav",
+    "displayName": "Lureqe Leticia",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_eshitaprasad028",
+    "email": "eshitaprasad028@gmail.com",
+    "password": "115498@nav",
+    "displayName": "Eshita Prasad",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_kolovanimeiwaga",
+    "email": "kolovanimeiwaga@yahoo.com",
+    "password": "85566@nav",
+    "displayName": "Kolovani Meiwaga",
+    "disabled": false
+  },
+  {
+    "uid": "headteacher_rosabatina3",
+    "email": "rosabatina3@gmail.com",
+    "password": "65486@nav",
+    "displayName": "Rosa Batina",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_milielinatale6",
+    "email": "milielinatale6@gmail.com",
+    "password": "83378@nav",
+    "displayName": "Milieli Natale",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_mwatabu",
+    "email": "mwatabu@gmail.com",
+    "password": "84761@nav",
+    "displayName": "M. Watabu",
+    "disabled": false
+  },
+  {
+    "uid": "systemadmin",
+    "email": "systemadmin@system.com",
+    "password": "admin12345",
+    "displayName": "System Admin",
+    "disabled": false
+  }
+]

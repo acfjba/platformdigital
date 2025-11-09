@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": "book-001",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "978-0-06-112008-4",
+    "totalCopies": 3,
+    "schoolId": "2009"
+  },
+  {
+    "id": "book-002",
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "978-0-452-28423-4",
+    "totalCopies": 5,
+    "schoolId": "2009"
+  },
+  {
+    "id": "book-003",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "978-0-7432-7356-5",
+    "totalCopies": 4,
+    "schoolId": "2009"
+  },
+  {
+    "id": "book-004",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "978-1-5032-9056-3",
+    "totalCopies": 2,
+    "schoolId": "2009"
+  },
+    {
+    "id": "book-005",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "978-0-316-76948-0",
+    "totalCopies": 6,
+    "schoolId": "2009"
+  }
+]

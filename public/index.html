@@ -1,0 +1,43 @@
+\  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login to School Platform</title>
+</head>
+<body>
+  <h2>System Admin Login</h2>
+  <input type="email" id="email" placeholder="Email"><br><br>
+  <input type="password" id="password" placeholder="Password"><br><br>
+  <button onclick="login()">Login</button>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    // Your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyD-L2Zx9FSDysCO6OypaaswfsQX4F4q73s",
+      authDomain: "school-platform-kc9uh.firebaseapp.com",
+      projectId: "school-platform-kc9uh",
+      storageBucket: "school-platform-kc9uh.appspot.com",
+      messagingSenderId: "840322255670",
+      appId: "1:840322255670:web:98e2f0f3ef1774a850c197"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.login = function() {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      if (!email || !password) {
+        alert("Enter both email and password.");
+        return;
+      }
+      signInWithEmailAndPassword(auth, email, password)
+        .then(cred => alert("✅ Logged in as: " + cred.user.email))
+        .catch(err => alert("❌ Login failed: " + err.message));
+    };
+  </script>
+</body>
+</html>

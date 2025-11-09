@@ -1,0 +1,36 @@
+
+[
+    {
+        "id": "inv-001",
+        "itemName": "Student Desk",
+        "category": "Furniture",
+        "quantity": 150,
+        "value": 75.50,
+        "status": "In Stock",
+        "location": "Main Storeroom",
+        "description": "Standard wooden student desk.",
+        "schoolId": "2009"
+    },
+    {
+        "id": "inv-002",
+        "itemName": "Student Chair",
+        "category": "Furniture",
+        "quantity": 160,
+        "value": 45.00,
+        "status": "In Stock",
+        "location": "Main Storeroom",
+        "description": "Standard plastic and metal student chair.",
+        "schoolId": "2009"
+    },
+    {
+        "id": "inv-003",
+        "itemName": "Dell Latitude Laptop",
+        "category": "Electronics",
+        "quantity": 25,
+        "value": 1200.00,
+        "status": "In Stock",
+        "location": "IT Department",
+        "description": "14-inch laptop for staff use.",
+        "schoolId": "2009"
+    }
+]

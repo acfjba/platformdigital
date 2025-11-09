@@ -1,0 +1,58 @@
+[
+  {
+    "uid": "primaryadmin_navolaudistrictschool",
+    "email": "navolaudistrictschool@yahoo.com",
+    "password": "2009@nav",
+    "displayName": "Primary Admin",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_lureqeleticia",
+    "email": "lureqeleticia@gmail.com",
+    "password": "82739@nav",
+    "displayName": "Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_eshitaprasad028",
+    "email": "eshitaprasad028@gmail.com",
+    "password": "115498@nav",
+    "displayName": "Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_kolovanimeiwaga",
+    "email": "kolovanimeiwaga@yahoo.com",
+    "password": "85566@nav",
+    "displayName": "Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "headteacher_rosabatina3",
+    "email": "rosabatina3@gmail.com",
+    "password": "65486@nav",
+    "displayName": "Head Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_milielinatale6",
+    "email": "milielinatale6@gmail.com",
+    "password": "83378@nav",
+    "displayName": "Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "teacher_mwatabu",
+    "email": "mwatabu@gmail.com",
+    "password": "84761@nav",
+    "displayName": "Teacher",
+    "disabled": false
+  },
+  {
+    "uid": "systemadmin",
+    "email": "systemadmin@system.com",
+    "password": "admin12345",
+    "displayName": "System Admin",
+    "disabled": false
+  }
+]

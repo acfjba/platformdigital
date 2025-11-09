@@ -1,0 +1,43 @@
+
+[
+    {
+        "id": "att-001",
+        "schoolId": "2009",
+        "staffId": "staff-001",
+        "staffName": "Lureqe Leticia",
+        "date": "2024-09-19",
+        "status": "Present",
+        "notes": "",
+        "recordedBy": "headteacher_rosabatina3"
+    },
+    {
+        "id": "att-002",
+        "schoolId": "2009",
+        "staffId": "staff-002",
+        "staffName": "Eshita Prasad",
+        "date": "2024-09-19",
+        "status": "Sick",
+        "notes": "Has a doctor's appointment.",
+        "recordedBy": "headteacher_rosabatina3"
+    },
+    {
+        "id": "att-003",
+        "schoolId": "2009",
+        "staffId": "staff-003",
+        "staffName": "Kolovani Meiwaga",
+        "date": "2024-09-19",
+        "status": "Present",
+        "notes": "",
+        "recordedBy": "headteacher_rosabatina3"
+    },
+    {
+        "id": "att-004",
+        "schoolId": "2009",
+        "staffId": "staff-004",
+        "staffName": "Rosa Batina",
+        "date": "2024-09-19",
+        "status": "Present",
+        "notes": "",
+        "recordedBy": "primaryadmin_navolaudistrictschool"
+    }
+]

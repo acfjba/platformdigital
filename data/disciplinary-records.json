@@ -1,0 +1,33 @@
+
+[
+    {
+      "id": "disciplinary-rec-001",
+      "schoolId": "2009",
+      "userId": "teacher_lureqeleticia",
+      "incidentDate": "2024-05-10",
+      "studentName": "Ratu Manasa",
+      "studentId": "S12347",
+      "studentDob": "2014-11-05",
+      "studentYear": "Year 4",
+      "issues": ["Bullying", "Disrespect"],
+      "comments": "Ratu was reported by two other students for repeatedly teasing and pushing them during recess. When approached, he was disrespectful to the teacher on duty.",
+      "raisedBy": "M. Watabu (Teacher on Duty)",
+      "parentsInformed": "Yes",
+      "actionComments": "Parents were called in for a meeting. Ratu has been given a 2-day in-school suspension and must write an apology letter to the students he bullied."
+    },
+     {
+      "id": "disciplinary-rec-002",
+      "schoolId": "2009",
+      "userId": "teacher_kolovanimeiwaga",
+      "incidentDate": "2024-05-12",
+      "studentName": "Sereana Vula",
+      "studentId": "S12348",
+      "studentDob": "2016-01-30",
+      "studentYear": "Year 2",
+      "issues": ["Absenteeism"],
+      "comments": "Sereana was absent for 3 consecutive days without any notification from her parents.",
+      "raisedBy": "Eshita Prasad (Class Teacher)",
+      "parentsInformed": "Attempted",
+      "actionComments": "Multiple calls were made to the parents with no response. A home visit has been scheduled with the Head Teacher."
+    }
+]

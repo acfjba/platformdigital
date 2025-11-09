@@ -1,0 +1,155 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Get user's role and schoolId from their auth token claims
+    function getUserRole() {
+      return request.auth.token.role;
+    }
+    
+    function getSchoolId() {
+      return request.auth.token.schoolId;
+    }
+
+    // Check if user is a system admin
+    function isSystemAdmin() {
+      return getUserRole() == 'system-admin';
+    }
+    
+    // Check if user is a school admin (Primary Admin, Head Teacher, Asst. Head Teacher)
+    function isSchoolAdmin() {
+      return getUserRole() in ['primary-admin', 'head-teacher', 'assistant-head-teacher'];
+    }
+
+    // Check if user is a teacher or higher
+    function isTeacherOrHigher() {
+      return getUserRole() in ['teacher', 'kindergarten', 'librarian', 'primary-admin', 'head-teacher', 'assistant-head-teacher'];
+    }
+    
+    // Check if the resource's schoolId matches the user's schoolId
+    function isUserInSchool(schoolId) {
+      return getSchoolId() == schoolId;
+    }
+    
+    // --- Global Rules ---
+
+    // Any authenticated user can read school info, but only admins can write
+    match /schools/{schoolId} {
+      allow read: if request.auth != null;
+      allow write: if isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(schoolId));
+    }
+    
+    // Any authenticated user can read school-specific info (news, program)
+    match /schools/{schoolId}/schoolInfo/{infoId} {
+        allow read: if request.auth != null;
+        // Allow librarians and above to edit school info
+        allow write: if isSystemAdmin() || ((isSchoolAdmin() || getUserRole() == 'librarian') && isUserInSchool(schoolId));
+    }
+
+    // Users can read their own user document
+    match /users/{userId} {
+      allow get: if request.auth != null && request.auth.uid == userId;
+      // Admins can read any user doc within their school, sys-admin can read all
+      allow list: if request.auth != null && (isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(getSchoolId())));
+      // Only system-admins can create/update user docs directly.
+      allow write: if isSystemAdmin();
+    }
+    
+    // System Admins can manage permission groups, snapshots, and licenses
+    match /permissionGroups/{groupId} {
+        allow read, write: if isSystemAdmin();
+    }
+    match /snapshots/{snapshotId} {
+        allow read, write, delete: if isSystemAdmin();
+    }
+    match /softwareLicenses/{licenseId} {
+        allow read, write, delete: if isSystemAdmin();
+    }
+    match /schoolSettings/{schoolId} {
+        allow read, write: if isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(schoolId));
+    }
+    match /emailHistory/{logId} {
+        allow read, delete: if isSystemAdmin();
+    }
+
+    // --- School-Specific Data Rules ---
+    
+    function isRequestingOwnSchoolData() {
+      return isUserInSchool(request.resource.data.schoolId);
+    }
+    
+    function isReadingOwnSchoolData(resource) {
+        return isUserInSchool(resource.data.schoolId);
+    }
+
+    // Staff Records: School admins can manage staff in their school
+    match /staff/{staffId} {
+        allow read: if request.auth != null; // Allow all auth'd users to read staff lists for contacts
+        allow create, update, delete: if isSystemAdmin() || (isSchoolAdmin() && isRequestingOwnSchoolData());
+    }
+
+    // Attendance: Teachers and admins can manage attendance for their school
+    match /staffAttendance/{recordId} {
+        allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+    
+    // Inventory: Primary inventory for admins, classroom for teachers
+    match /schools/{schoolId}/primaryInventory/{itemId} {
+        allow read, write: if isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(schoolId));
+    }
+    match /schools/{schoolId}/classroomInventory/{itemId} {
+         allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isUserInSchool(schoolId));
+    }
+    
+    // Academics: Teachers and admins can manage academic data for their school
+    match /subjects/{subjectId} {
+         allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+    match /examResults/{resultId} {
+         allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+    
+    // Lesson Plans: Teachers submit, Head Teachers review
+    match /workbookPlans/{planId} {
+      allow create: if isTeacherOrHigher() && isRequestingOwnSchoolData();
+      allow read: if isSystemAdmin() || (isTeacherOrHigher() && isReadingOwnSchoolData(resource));
+      // Only Head Teachers/Admins can update (to approve/reject)
+      allow update: if isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(getSchoolId())); 
+    }
+    
+    match /lessonPlans/{planId} {
+         allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+
+    // Student Services: Teachers and admins can manage for their school
+    match /counselling/{recordId} {
+        allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+    match /disciplinary/{recordId} {
+        allow read, write: if isSystemAdmin() || (isTeacherOrHigher() && isRequestingOwnSchoolData());
+    }
+    
+    // OHS Records: Any staff member can create, but only admins can manage fully
+    match /ohsRecords/{recordId} {
+       allow create: if isTeacherOrHigher() && isRequestingOwnSchoolData();
+       allow read, update, delete: if isSystemAdmin() || (isSchoolAdmin() && isUserInSchool(getSchoolId()));
+    }
+    
+    // Library: Librarians and admins can manage books and transactions
+    match /books/{bookId} {
+       allow read: if isTeacherOrHigher();
+       allow write: if isSystemAdmin() || ((isSchoolAdmin() || getUserRole() == 'librarian') && isRequestingOwnSchoolData());
+    }
+    match /libraryTransactions/{txId} {
+       allow read, write: if isSystemAdmin() || ((isSchoolAdmin() || getUserRole() == 'librarian') && isRequestingOwnSchoolData());
+    }
+    
+    // Invites: Admins can create invite records
+    match /invites/{inviteId} {
+        allow write: if isSystemAdmin() || isSchoolAdmin();
+        // Add rules for reading/deleting if needed
+    }
+  }
+}

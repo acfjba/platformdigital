@@ -1,0 +1,51 @@
+
+[
+    {
+      "id": "exam-res-001",
+      "schoolId": "2009",
+      "studentId": "S12345",
+      "studentName": "Jone Doe",
+      "studentYear": "3",
+      "examType": "Mid-Term",
+      "subject": "Mathematics",
+      "score": 85,
+      "grade": "A",
+      "examDate": "2024-06-10",
+      "term": "2",
+      "year": "2024",
+      "comments": "Excellent work in geometry.",
+      "recordedByUserId": "teacher_lureqeleticia"
+    },
+    {
+      "id": "exam-res-002",
+      "schoolId": "2009",
+      "studentId": "S12346",
+      "studentName": "Adi Litia",
+      "studentYear": "2",
+      "examType": "Final Exam",
+      "subject": "English",
+      "score": 92,
+      "grade": "A+",
+      "examDate": "2024-11-20",
+      "term": "4",
+      "year": "2024",
+      "comments": "Outstanding performance in comprehension and writing.",
+      "recordedByUserId": "teacher_eshitaprasad028"
+    },
+     {
+      "id": "exam-res-003",
+      "schoolId": "2009",
+      "studentId": "S12347",
+      "studentName": "Ratu Manasa",
+      "studentYear": "4",
+      "examType": "Mid-Term",
+      "subject": "Science",
+      "score": 68,
+      "grade": "C",
+      "examDate": "2024-06-11",
+      "term": "2",
+      "year": "2024",
+      "comments": "Needs improvement in understanding life cycles.",
+      "recordedByUserId": "teacher_milielinatale6"
+    }
+]

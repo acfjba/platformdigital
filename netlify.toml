@@ -1,0 +1,14 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Optional: Redirects for SPA-style routing
+# Uncomment if you want all routes to resolve to index.html
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200

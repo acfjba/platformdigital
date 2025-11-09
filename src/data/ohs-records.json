@@ -1,0 +1,24 @@
+
+[
+    {
+        "id": "ohs-rec-001",
+        "schoolId": "2009",
+        "incidentType": "Injury",
+        "location": "Playground - Swing Area",
+        "incidentDate": "2024-05-20",
+        "description": "Student fell from the swing while trying to stand on it. Minor scrape on the left knee.",
+        "actionTaken": "First aid was administered immediately by the teacher on duty. The student was cleaned up and a bandage was applied. Parents were notified via phone call.",
+        "reportedBy": "M. Watabu"
+    },
+    {
+        "id": "ohs-rec-002",
+        "schoolId": "2009",
+        "incidentType": "Hazard",
+        "location": "Year 4 Classroom",
+        "incidentDate": "2024-05-21",
+        "description": "A broken floor tile was identified near the classroom entrance, creating a tripping hazard.",
+        "actionTaken": "The area was immediately cordoned off with chairs. A hazard sign was placed. The school's maintenance staff was informed and a request for repair was logged.",
+        "reportedBy": "Milieli Natale"
+    }
+]
+    
