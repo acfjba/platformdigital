@@ -68,3 +68,22 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 serviceAccountKey.json
+# Next.js
+.next/
+out/
+*.log
+
+# Firebase
+firebase-debug.log
+.firebaserc
+
+# Netlify
+.netlify/
+dist/
+
+# General
+.env*
+*.DS_Store
+*.pem
+*.key
+*.crt
