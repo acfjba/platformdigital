@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/fetch-user-info": "pages/api/fetch-user-info.js",
+  "/api/emails/delete": "pages/api/emails/delete.js",
+  "/api/send-email": "pages/api/send-email.js",
+  "/api/snapshots/create": "pages/api/snapshots/create.js",
+  "/api/snapshots/list": "pages/api/snapshots/list.js",
+  "/api/snapshots/restore": "pages/api/snapshots/restore.js",
+  "/api/seed": "pages/api/seed.js",
+  "/_document": "pages/_document.js"
+}

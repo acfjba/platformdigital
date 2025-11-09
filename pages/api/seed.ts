@@ -1,3 +1,27 @@
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT!, "base64").toString("utf8")
+);
+
+import admin from "firebase-admin";
+
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+}
+
+const serviceAccount = JSON.parse(
+  Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT!, "base64").toString("utf8")
+);
+
+import admin from "firebase-admin";
+
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+}
+
 
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { initializeApp, getApps, cert, App, ServiceAccount } from 'firebase-admin/app';
@@ -16,7 +40,6 @@ import counsellingRecordsData from '@/data/counselling-records.json';
 import ohsRecordsData from '@/data/ohs-records.json';
 import attendanceData from '@/data/attendance.json';
 import permissionsData from '@/data/permissions.json';
-import serviceAccountKey from '../../../serviceAccountKey.json';
 
 
 interface SeedReport {
